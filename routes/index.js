@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.get('/app/healthcheck', function(req, res, next) {
+router.get('/api/v1/app/healthcheck', function(req, res, next) {
   res.json('ok');
 });
 module.exports = router;
